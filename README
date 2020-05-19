@@ -1,0 +1,19 @@
+You need the following installed
+    Desktopmagic
+    pywin32
+    ffmpeg-python
+    ffmpeg (MUST BE IN THE FOLDER OR IN PATH)
+
+
+*TODO*
+* Run ffmpeg to append each new image to video, to reduce the amount of space used
+    - Will this mean I don't have to check for previous image..dependent on interval
+* Create unique recording names (Date and time started maybe)
+* Add interface to start and stop recordings
+    - Add interval
+    - Storage location
+    - Maybe some quality settings for ffmpeg
+
+
+Run this on the folder at the end of the day 
+& 'C:\Program Files\ffmpeg\bin\ffmpeg.exe' -framerate 10 -r 3 -start_number 1 -i %d.jpg -vcodec mpeg4 output.mp4 
